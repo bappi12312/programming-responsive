@@ -54,6 +54,15 @@ html, body {
   color: #424242;
 }
 
+.nav i {
+  display: none;
+}
+
+.nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+  margin-bottom: 4vw;
+}
+
 /* header 2nd part */
 
 .container .header-text {
@@ -120,9 +129,13 @@ html, body {
 
 
 @media (max-width: 576px) {
+  .container .header {
+    background-color: rgba(25, 175, 45, 0.089);
+  }
+
   .nav {
     height: 14vw;
-    background-color: rgba(0, 0, 255, 0.247);
+    background-color: rgba(155, 155, 167, 0.247);
     margin-bottom: 4vw;
   }
 
@@ -132,6 +145,8 @@ html, body {
 
   .container .nav h4 {
     font-size: 5vw;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(75, 63, 63);
   }
   
   .nav i {
