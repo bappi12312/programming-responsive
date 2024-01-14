@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Fira Code', monospace;
-}
-
-* ::selection {
-  background-color: rgba(206, 200, 200, 0.541);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html, body {
@@ -16,228 +9,84 @@ html, body {
   height: 100%;
 }
 
-.container {
-  width: 100%;
-}
 
-/* header style */
+
+/* header section */
+
+
+/* nav related style */
+
 
 .header {
   width: 100%;
   background: rgba(255, 144, 14, 0.10);
 }
 
-.header .nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5vw 4vw;
+  padding: 5vw 6vw;
 }
 
-.header .nav .nav-text {
+nav ul {
   display: flex;
   align-items: center;
-  gap: 5vw;
-}
-
-.header .nav h4 {
-  text-transform: uppercase;
-  font-size: 1.5vw;
-  font-weight: 700;
-  color: #131313;
-}
-
-
-.header .nav .nav-text h3 {
-  font-weight: 500;
-  font-size: 1.1vw;
-  color: #424242;
-}
-
-.nav i {
-  display: none;
-}
-
-.nav {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-  margin-bottom: 4vw;
-}
-
-/* header 2nd part */
-
-.container .header-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.container .header-text h2 {
-  text-align: center;
-  color: transparent;
-  -webkit-text-stroke:1px rgba(33, 151, 53, 0.705);
-}
-
-.container .header-text p {
-  width: 50%;
-  text-align: center;
-  margin-top: 2vw;
-  color: #727272;
-  font-weight: 400;
-  font-size: .9rem;
-}
-
-/* primary button */
-
- button {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.185);
-  border-radius: 100px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(146, 132, 132, 0.774);
-  font-weight: 700;
-  padding: 1.5vw 2vw;
-  margin-top: 3vw;
-}
-
-button:hover {
-  background-color: orange;
-  border: none;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 1s ease-in-out  ;
-}
-
-.container .picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5vw;
-}
-
-
-.container .picture img {
-  object-fit: cover;
-  width: 70%;
-  border-radius: 2vw;
-  padding-bottom: 5vw;
-  
-}
-
-
-
-/* main section style */
-
-/* main section 1 related style */
-
-.main {
-  width: 100%;
-  height: 100vh;
-}
-
-.main .section1 {
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  display: flex;
   gap: 4vw;
-  padding: 2vw 6vw;
-
 }
 
-.main .section1 .section1-img {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2vw;
+nav ul > li {
+  list-style-type: none;
+  cursor: pointer;
 }
 
+/* banner section related styles */
 
-.main .section1 .section1-img img {
-  width: fit-content;
-  object-fit: cover;
+.banner-text {
+  text-align: center;
+  margin-bottom: 3vw;
 }
 
-.main .section1 .section1-text h2 {
- color: #FF900E;
- font-size: 3rem;
+.grey-text {
+  color: rgb(94, 89, 89);
+  margin-top: 1vw;
+  margin-bottom: 2vw;
 }
 
-
-.main .section1 .section1-text .first-span {
-  color: grey;
-  font-weight: 600;
-  font-size: 2.5rem;
+button {
+  border: .5px solid rgba(0, 0, 0, 0.247);
+  padding: 2vw 3vw;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.main .section1 .section1-text .secont-span {
-  color: #131313;
-  font-size: 2.9rem;
-  font-weight: 700;
+.banner-section img {
+  width: 70%;
+  border-radius: 15px;
+  padding-bottom: 5vw;
 }
 
-
-.main .section1 .section1-text p {
-  color: #727272;
-  font-size: 1rem;
-  font-weight: 400;
+.banner-img-container {
+  display: flex;
+  justify-content: center;
 }
 
 
 
-
-  /* section 2 related style */
-
-
-
-
-
-
+/* responsive style started */
 @media (max-width: 576px) {
-  /* header related style */
-  .container .header {
-    background-color: rgba(25, 175, 45, 0.089);
-  }
-
-  .nav {
-    height: 14vw;
-    background-color: rgba(155, 155, 167, 0.247);
-    margin-bottom: 4vw;
-  }
-
-  .header .nav .nav-text h3 {
-    display: none;
-  }
-
-  .container .nav h4 {
-    font-size: 5vw;
-    color: transparent;
-    -webkit-text-stroke: 1px rgb(75, 63, 63);
-  }
-  
-  .nav i {
-    display: block;
-    font-size: 6vw;
-    font-weight: 700;
-  }
-
-
-
-
-  /* section 1 related responsive */
-  .main .section1 {
-    width: 100%;
+  nav {
     flex-direction: column;
-    height: 100vh;
-    margin-top: 6vw;
+    gap: 10px;
   }
 
-
-  .main .section1 .section1-img {
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 6vw;
+  .banner-text {
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 
-  /* section 2 related responsive */
-
-
+  .banner-section img {
+    width: 80%;
+    border-radius: 15px;
+  }
 }
