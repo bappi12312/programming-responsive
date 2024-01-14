@@ -71,6 +71,27 @@ button {
   justify-content: center;
 }
 
+/* main related style */
+/* section1 related style */
+
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  gap: 4vw;
+  margin-top: 4vw;
+}
+
+.section1-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+}
+
+
 
 
 /* responsive style started */
@@ -88,5 +109,19 @@ button {
   .banner-section img {
     width: 80%;
     border-radius: 15px;
+  }
+
+  /* section1 related style */
+
+  .section1 {
+    flex-direction: column;
+  }
+
+  .section1-img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section1-text-container {
+    text-align: center;
   }
 }
