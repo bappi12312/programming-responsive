@@ -129,6 +129,33 @@ button {
 }
 
 
+/* section3 styles */
+
+.section3 {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.misinformation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ row-gap: 6px;
+}
+
+
+.section3-card {
+  border: 2px solid rgba(255, 0, 0, 0.11);
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  width: 149px;
+  text-align: center;
+}
+
 
 
 /* responsive style started */
@@ -168,7 +195,27 @@ button {
     padding: 5vw;
     flex-direction: column;
   }
+
+  /* section 3 related style */
+
+  /* .section3 {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    max-width: 300px;
+    background-color: red;
+    margin: 0 auto;
+
+  } */
+
+  .misinformation .section3-card {
+    gap: 10px;
+    
+  }
+
 }
+
+
+
 
 /* tablet */
 
