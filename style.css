@@ -140,7 +140,7 @@ button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
- row-gap: 6px;
+  row-gap: 6px;
 }
 
 
@@ -152,8 +152,34 @@ button {
   align-items: center;
   flex-direction: column;
   gap: 4px;
-  width: 149px;
+  width: 150px;
   text-align: center;
+}
+
+
+/* section4 style */
+
+.section4 {
+  padding-top: 4vw;
+  padding-bottom: 4vw ;
+}
+
+.section4 h2, p {
+  text-align: center;
+}
+
+
+
+
+.section5-img-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+}
+
+.section5-img-container img {
+  width: 100px;
 }
 
 
@@ -207,9 +233,12 @@ button {
 
   } */
 
-  .misinformation .section3-card {
-    gap: 10px;
-    
+.section3-card {
+  width: 100px;
+  } 
+
+  .section5-img-container {
+    gap: 30px;
   }
 
 }
